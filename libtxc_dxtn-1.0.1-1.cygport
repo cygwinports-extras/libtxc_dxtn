@@ -1,0 +1,7 @@
+
+HOMEPAGE="http://dri.freedesktop.org/wiki/S3TC"
+SRC_URI="http://cgit.freedesktop.org/~mareko/libtxc_dxtn/snapshot/${P}.tar.bz2"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"
+
+KEEP_LA_FILES="none"
