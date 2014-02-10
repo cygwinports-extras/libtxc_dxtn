@@ -1,0 +1,12 @@
+NAME="libtxc_dxtn"
+VERSION=1.0.1
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="S3TC implementation"
+DESCRIPTION="Software implementation of the S3 Texture Compression algorithm"
+HOMEPAGE="http://dri.freedesktop.org/wiki/S3TC"
+SRC_URI="http://cgit.freedesktop.org/~mareko/libtxc_dxtn/snapshot/libtxc_dxtn-${VERSION}.tar.bz2"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"
+
+KEEP_LA_FILES="none"
