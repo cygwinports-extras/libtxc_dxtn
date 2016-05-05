@@ -9,4 +9,9 @@ SRC_URI="http://cgit.freedesktop.org/~mareko/libtxc_dxtn/snapshot/libtxc_dxtn-${
 
 MAKEOPTS+=" LDFLAGS=-no-undefined"
 
+PKG_NAMES="${NAME} ${NAME}-devel"
+libtxc_dxtn_CONTENTS="usr/lib/cygtxc_dxtn.dll"
+libtxc_dxtn_devel_REQUIRES="libGL-devel ${NAME}"
+libtxc_dxtn_devel_CONTENTS="usr/include/txc_dxtn.h"
+
 KEEP_LA_FILES="none"
